@@ -57,6 +57,8 @@ h2, h3 {
 .header-box {
     display: flex;
     align-items: center;
+
+    border-bottom: 1px solid #EEEEEE;
 }
 /* Логотип */
 .logo {
