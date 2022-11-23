@@ -54,11 +54,13 @@ h2, h3 {
 }
 
 /* Header */
+header {
+    border-bottom: 1px solid #EEEEEE;
+}
+
 .header-box {
     display: flex;
     align-items: center;
-
-    border-bottom: 1px solid #EEEEEE;
 }
 /* Логотип */
 .logo {
@@ -125,7 +127,7 @@ h2, h3 {
 
 /* Hero */
 .hero {
-    padding-top: 280px;
+    padding-top: 200px;
     padding-bottom: 200px;
 
     background-color: #2F303A;
@@ -135,6 +137,9 @@ h2, h3 {
 
 h1 {
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
 
     color: #fff;
 
@@ -258,15 +263,13 @@ h1 {
 
 /* Footer */
 footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: #2F303A;
 }
 
-.footer-box {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.footer-box .logo {
+footer .logo {
     display: block;
     margin-bottom: 28px;
 }
@@ -279,6 +282,10 @@ footer {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+}
+
+.address .item:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .contacts-address {
@@ -341,16 +348,11 @@ footer {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    gap: 30px;
 }
 
 .portfolio-item {
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-
-    border-bottom: 1px solid #EEEEEE;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .project-name {
@@ -367,4 +369,10 @@ footer {
     
     font-size: 16px;
     line-height: 1.88;
+}
+
+.project-desc {
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
